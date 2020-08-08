@@ -1,0 +1,142 @@
+@font-face {
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: raleway;
+  }
+body{
+    font-family: "raleway";
+    background-color: #E5E5E5;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* MAIN AREA START */
+.cus-upper-area{
+    margin: 60px auto;
+}
+.cus-upper-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cus-upper-area .upload-text{
+    margin-top: 20px;
+
+}
+.cus-upper-area .upload-text input[type="file"]{
+    display: none;
+}
+.cus-upper-area .upload-text label{
+    cursor: pointer;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: rgba(52, 73, 94, 0.5);
+}
+.cus-form{
+    margin: 70px auto;
+}
+.cus-input-outter{
+    margin-bottom: 40px;
+}
+.cus-input-outter div input{
+    height: 60px;
+    border: 0.5px solid #34495E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.cus-input-outter div input::placeholder{
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+letter-spacing: 0.03em;
+color: rgba(52, 73, 94, 0.5);
+}
+.cus-input-outter div input:focus{
+    background-color: transparent;
+}
+.cus-text-area-outter textarea{
+    border: 0.5px solid #34495E;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 100%;
+}
+.cus-text-area-outter textarea::placeholder{
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+letter-spacing: 0.03em;
+color: rgba(52, 73, 94, 0.5);
+}
+.cus-text-area-outter textarea:focus{
+    background-color: transparent;
+}
+.cus-btns{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cus-btns input{
+box-sizing: border-box;
+border-radius: 5px;
+    height: 60px;
+    width: 200px;
+
+}
+.cus-btns .reset-btn{
+    border: 1px solid #E53E44;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #E53E44;
+margin-right: 20px;
+}
+.cus-btns .reset-btn:hover{
+    background-color: #E53E44;
+    color: #ECF0F1;
+    transition: 0.5s;
+}
+.cus-btns .submit-btn{
+    background-color: #E53E44;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #ECF0F1;
+}
+.cus-btns .submit-btn:hover{
+    border: 1px solid #E53E44;
+    background-color: transparent;
+    color: #E53E44;
+    transition: 0.5s;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .cus-input-outter div input{
+        margin-bottom: 40px;
+    }
+    .cus-input-outter{
+        margin-bottom: 0px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 400px){
+    .cus-btns{
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    .cus-btns .reset-btn{
+        margin-right: 0px;
+        margin-bottom: 20px;
+        padding: 0px;
+    }
+}

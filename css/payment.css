@@ -1,0 +1,564 @@
+@font-face {
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: raleway;
+  }
+body{
+    font-family: "raleway";
+    background-color: #34495E;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+/* DROP DOWN*/
+.navbar-owner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+}
+.navbar-owner .dropdown span{
+    padding: 0px;
+    margin: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.navbar-owner .dropdown span:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+.navbar-line{
+    background-color: rgba(236, 240, 241, 0.6);
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    right: 115px;
+    top: 0;
+    margin: auto 5px;
+}
+/* DROP DOWN */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.dropdown-menu {
+    margin-top:20px;
+    display: none;
+    position: absolute;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    width:170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: #223140;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* NAVBAR AREA*/
+.right-nav{
+    width: 60%;
+    background-image: linear-gradient(rgba(52, 73, 94, 0.45), rgba(52, 73, 94, 0.45)), url("../imgs/nav-bg-img.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    padding: 0px 120px;
+}
+.cus-head-pad{
+    padding: 8px 0px;
+}
+.cus-nav-pad{
+    padding: 0px;
+}
+.navbar{
+    width: 100%;
+    padding: 8px 0px;
+}
+.menu-img{
+    width: 35px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-collapse .navbar-nav .nav-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: #F8F9FA;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.navbar-collapse .navbar-nav .nav-link:hover{
+    transition: .5s;
+    opacity: 0.7;
+}
+.cus-btn{
+    background: transparent;
+    color: #ffffff;
+    text-transform: capitalize;
+    border:  2px solid #C0392B;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.cus-btn:hover{
+    transition: 0.5s;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid blue;
+}
+/* NAVBAR END */
+
+/* PAYMENT MAIN AREA START */
+/* PAYMENT HEADING AREA */
+.payment-margin{
+    padding: 0px;
+}
+.heading-margin{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    padding-left: 0px;
+}
+.pay-heading h1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #ECF0F1;
+    padding: 0px;
+}
+
+
+
+/* PAYMENT MAIN AREA START */
+.cus-bg{
+    position: relative;
+    width: 100%;
+}
+.cus-bg .cus-bg-inner::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("../imgs/Bg (1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 1630px;
+    width: 850px;
+    z-index: -1;
+}
+
+
+.radio-inner{
+    display: flex;
+    flex-direction: column;
+}
+.radio-btns{
+    display: flex;
+    flex-direction: row;
+}
+.radio-btns p{
+    margin-left: 45px;
+    margin-top: -3px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ECF0F1;
+
+}
+.radio-btns .job-nmbr{
+    position: absolute;
+    right: 25px;
+}
+.radio-inner .radio-btns {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(52, 73, 94, 0.5);
+    position: relative;
+}
+.radio-inner .radio-btns label input{
+    margin-right:12px;
+} 
+.radio-inner .radio-btns label input[type="radio"]{
+    display: none;
+}
+.radio-inner .radio-btns label span{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0.3);;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0px;
+    top: 2px;
+}
+.radio-inner .radio-btns label span:after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    background:#C0392B;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: 200ms ease-in-out 0s;
+}
+.radio-inner .radio-btns label input[type="radio"]:checked ~ span:after{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+hr{
+    border: 0.5px solid #ECF0F1;
+}
+form p{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ECF0F1;
+    margin: 50px auto;
+}
+.form-group{
+    margin-bottom: 40px;
+}
+.card-type{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+.card-type .master{
+    margin-left: 15px;
+}
+.name-input{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+}
+.name-input input{
+    background-color: transparent;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 60px;
+}
+.name-input input::placeholder{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.name-input input[type="text"]{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.name-input input:focus{
+    background-color: transparent;
+}
+.name-input input:nth-child(2){
+    margin-left: 30px;
+}
+.card-nmbr input{
+    width: 80%;
+    height: 60px;
+    background-color: transparent;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.card-nmbr input:focus{
+    background-color: transparent;
+}
+.card-nmbr input[type="number"]{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.card-nmbr input::placeholder{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.card-date{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.card-date input:nth-child(1){
+    width: 48%;
+}
+.card-date input:nth-child(2){
+    width: 20%;
+    margin-left: 31px;
+}
+.card-date input{
+    height: 50px;
+    background-color: transparent;
+    color: #fff;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.card-date input::placeholder{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.card-date input:focus{
+    background-color: transparent;
+    color: #fff;
+}
+.card-date input[type="password"]{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1; 
+}
+.cus-submit-btn{
+    margin: 60px auto;
+}
+.cus-submit-btn input{
+    background-color: #C0392B;
+    border-radius: 5px;
+    height: 60px;
+    width: 55%;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ECF0F1;
+}
+.cus-submit-btn input:hover{
+    color: #ECF0F1;
+}
+/* PAYMENT MAIN AREA END */
+
+/*FOOTER AREA STARTS*/
+.footer-bg{
+    background-color: #C4C4C4;
+    padding: 0px;
+}
+.footer-inner{
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.footer-section1 .footer-logo{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 35px;
+}
+.footer-section1 .footer-logo-text{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(52, 73, 94, 0.5);
+    margin-top: 10px;
+}
+.footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.footer-section2 .foot-heading, .footer-section3 .foot-heading, .footer-section4 .foot-heading, .footer-section5 .foot-heading{
+    color: #223140;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}  
+.foot-link{
+    color: rgba(52, 73, 94, 0.5);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.foot-link:hover{
+    text-decoration: none;
+    color:rgba(52, 73, 94, 0.5);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.foot-input{
+margin-top:10px;
+}
+.foot-input .input-group-text{
+    background-color: #FFFFFF;
+    border: 0px;
+}
+.foot-input .input-txt{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 0px;
+}
+.copyright-text{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.copyright-text .copyright{
+    font-size: 14px;
+    color: rgba(52, 73, 94, 0.5);
+    text-transform: capitalize;
+}
+@media only screen and (min-width: 200px) and (max-width: 1024px){
+    .cus-bg .cus-bg-inner::after{
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .name-input{
+        display: block;
+    }
+    .name-input input:nth-child(2){
+        margin: 20px 0px;
+    }
+    .form-group{
+        margin:0px;
+    }
+    .card-date{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .card-date input:nth-child(2){
+        width: 27%;
+    }
+    .name-input{
+        width: 100%;
+    }
+    .card-nmbr input{
+        width: 100%;
+    }
+    .card-date input:nth-child(1){
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 400px){
+    .card-date{
+        width: 100%;
+        display: block;
+    }
+    .card-date input:nth-child(1){
+        width: 100%;
+    }
+    .card-date input:nth-child(2){
+        width: 100%;
+        margin: 20px 0px;
+    }
+}
+@media only screen and (min-width: 403px) and (max-width: 442px){
+    .pay-heading h1{
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 380px) and (max-width: 402px){
+    .pay-heading h1{
+        font-size: 42px;
+    }
+}
+@media only screen and (min-width: 365px) and (max-width: 379px){
+    .pay-heading h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 340px) and (max-width: 364px){
+    .pay-heading h1{
+        font-size: 37px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 339px){
+    .pay-heading h1{
+        font-size: 32px;
+    }
+}
+
+
+
+@media only screen and (min-width: 200px) and (max-width: 990px){
+    .navbar-line{
+        display: none;
+    }
+    .navbar-owner{
+        display: block;
+        margin-left: 0px;
+    }
+}
+/* FOOTER QUERRY */
+@media only screen and (min-width: 767px) and (max-width: 1157px){
+    .footer-section2{
+        margin-left: 30px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 19%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .footer-inner{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .foot-input{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 500px){
+    .foot-input{
+        width: 80%;
+    }
+}

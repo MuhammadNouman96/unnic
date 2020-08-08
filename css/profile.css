@@ -1,0 +1,457 @@
+@font-face {
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: raleway;
+  }
+body{
+    font-family: "raleway";
+    background-color: #34495E;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* NAVBAR MENU AREA START */
+.open-btn{
+    width: 50px;
+    margin-right: 40px;
+}
+.open-btn img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.cus-nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 25px auto;
+}
+.left-side{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+.premium-btn{
+    background-color: rgba(229, 62, 68, 0.3);
+    border: 1px solid #E53E44;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.premium-btn p{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #ECF0F1;
+    margin-bottom: 0px;
+}
+/* SEARCH AREA */
+.search-area{
+    width: 80%;
+}
+.search-area input{
+    background-color: transparent;
+    width: 100%;
+    margin: auto;
+    height: 45px;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.search-area input:focus{
+    background-color: transparent;
+    color: #ECF0F1;
+}
+.search-area input[type="text"]{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: rgba(196, 196, 196, 0.5);
+}
+.cus-input{
+    position: relative;
+}
+.cus-input img{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+/* DROP DOWN*/
+.cus-dropdown{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+}
+.cus-dropdown .dropdown span{
+    padding: 0px;
+    margin: auto;
+    margin-right: 10px;
+    cursor: pointer ;
+}
+.cus-dropdown .dropdown span:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+.navbar-line{
+    background-color: rgba(236, 240, 241, 0.6);
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    right: 115px;
+    top: 0;
+    margin: auto 5px;
+}
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.dropdown-menu {
+    margin-top:20px;
+    display: none;
+    position: absolute;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    width:170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: #223140;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.profile-outer{
+    display: flex;
+    flex-direction: row;
+}
+/* DROP DOWN END */
+
+/* SIDEBAR MENU AREA START */
+.sidebar{
+    transition: all 0.4s;
+    height: 100%;
+    width: 300PX;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #C4C4C4;
+    padding: 20px;
+    display: none;
+    z-index: 1;
+}
+.closebtn{
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    font-size: 35px;
+    text-decoration: none;
+    color: #223140;
+}
+.closebtn:hover{
+    text-decoration: none;
+    color: #223140;
+}
+.logo{
+    text-align: center;
+}
+.cus-links{
+    margin-top: 30px;
+}
+.cus-links a{
+    padding: 10px;
+    display: block;
+    margin-bottom: 35px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: #34495E;
+    text-decoration: none;
+}
+.cus-links a:hover{
+    transition: 0.3s;
+    opacity: .9;
+}
+.cus-links a:nth-child(2){
+    background-color: rgba(237, 28, 36, 0.8);
+    color: #fff;
+    border-radius: 2px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.cus-links a img{
+    margin-right: 20px;
+}
+/* SIDEBAR MENU AREA END */
+/* MAIN AREA START */
+.cus-bg{
+    position: relative;
+}
+.cus-bg-inner::after{
+    content: "";
+    background-image: url("../imgs/Bg (1).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    height: 800px;
+    width: 844px;
+}
+/* HEADING */
+.main-heading{
+    margin: 40px auto;
+}
+.main-heading h2{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #ECF0F1;
+}
+/* CUSTOMER PROFILE */
+.profile-header-margin{
+    margin-bottom: 100px;
+}
+.profile-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: unset;
+    flex-wrap: wrap;
+}
+.profile-header .customer-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.customer-info .customer-img img{
+    width: 150px;
+    height: 150px;
+}
+.customer-info .customer-name-section{
+    margin-left: 30px;
+}
+.customer-info .customer-name-section p{
+    margin: 0px;
+}
+.customer-info .customer-name-section .name{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 34px;
+    color: #ECF0F1;
+    margin-bottom: 10px;
+}
+.customer-info .customer-name-section .mail{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #0080FF;
+    margin-bottom: 5px;
+}
+.customer-info .customer-name-section .address{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.profile-header a{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #ECF0F1;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    background-color: #E53E44;
+    border-radius: 4px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-header a:hover{
+    background-color: #ECF0F1;
+    color: #E53E44;
+    transition: 0.5s;
+}
+
+/* CUSTOMER INFORMATION */
+.cus-row-outter{
+    margin-bottom: 60px;
+}
+.cus-inner-text{
+    border-bottom: 1px solid rgba(236, 240, 241, 0.5);
+    padding-bottom: 15px;
+}
+.cus-inner-text img{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+.cus-inner-text span{
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+color: #ECF0F1;
+}
+.about-heading{
+    margin-bottom: 10px;
+}
+.about-heading h3{
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+color: #ECF0F1;
+   
+}
+.cus-about-area{
+    border: 1px solid rgba(236, 240, 241, 0.5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 20px;
+margin-bottom: 120px;
+}
+.cus-about-area p{
+    font-family: Raleway;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 27px;
+color: #ECF0F1;
+}
+/* MAIN AREA END */
+
+/* MEDIA QUERRY */
+
+@media only screen and (min-width: 200px) and (max-width: 991px){
+    .today-jobs-outter{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .cus-appoin-outter{
+        margin-top: 40px;
+    }
+    .profile-outer {
+        width: 35%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .cus-bg-inner::after{
+        display: none;
+    }
+    .cus-inner-text{
+        margin-top: 40px;
+    }
+    .cus-row-outter{
+        margin-bottom: 0px;
+    }
+    .about-heading{
+        margin-top: 40px;
+    }
+    .profile-header-margin{
+        margin-bottom: 50px;
+    }
+    .profile-header a{
+        margin-top: 40px;
+
+    }
+    .premium-btn{
+        margin: 0px;
+    }
+    .left-side{
+        width: 100%;
+        justify-content: space-between;
+    }
+    .profile-section{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cus-input{
+        margin-right: 15px;
+    }
+    .person-info{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 450px){
+    .profile-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-header .customer-info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .customer-info .customer-name-section{
+        margin-left: 0px;
+        margin-top: 40px;
+        text-align: center;
+    }
+    .profile-section{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100% ;
+    }
+    .search-area{
+        width: 100%;
+    }
+    .cus-input{
+        margin: 0px;
+    }
+    .dropdown-menu.show{
+        left:-100px;
+    }
+    .profile-outer{
+        width: 100%;
+        margin-top: 30px;
+        justify-content: flex-end;
+    }
+    
+}

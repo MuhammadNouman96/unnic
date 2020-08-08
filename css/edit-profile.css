@@ -1,0 +1,188 @@
+/* PROFILE HEADING AREA START */
+.cus-profile-margin{
+    padding: 0px;
+    margin-top: 99px;
+    margin-bottom: 33px;
+}
+.cus-heading-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.cus-heading-outer .cus-profile-heading h1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #ECF0F1;
+    text-transform: capitalize;
+    padding: 0px;
+    margin: 0px;
+}
+.cus-heading-outer .cus-account-area{
+    padding: 6px 14px;
+    background-color: #B7E7CB;
+    border-radius: 100px;
+}
+.cus-heading-outer .cus-account-area span{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #36A184;
+    text-transform: capitalize;
+    margin-left: 10px;
+}
+/* PROFILE HEADING AREA END */
+/* PROFILE MAIN AREA START */
+
+/* LEFT SECTION */
+.cus-main-margin{
+    padding: 0px;
+}
+.change-img{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.change-img input[type="file"]{
+    display: none;
+}
+.change-img label{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #ECF0F1;
+    cursor: pointer;
+}
+.password-account p{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #ECF0F1;
+    cursor: pointer;
+}
+/* RIGHT SECTION */
+.profile-form-outer{
+    margin-top: 100px;
+    padding: 0px;
+    width:100%;
+}
+form{
+    width: 100%;
+}
+.form-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.form-group input{
+    width: 46.5%;
+    background-color: transparent;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 60px;
+}
+.form-group input::placeholder{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.form-group input:nth-child(2){
+    margin-left: 60px;
+}
+.form-group input:focus{
+    background-color: transparent;
+}
+.form-group input[type="text"], input[type="email"], input[type="tel"]{
+    color: #ECF0F1;
+}
+.form-group input[type="email"]{
+    color: #ECF0F1;
+}   
+.form-group input[type="tel"]{
+    color: #ECF0F1;
+}
+.cus-address input{
+    width: 100%;
+}
+.cus-submit-btns{
+    margin-bottom: 90px;
+}
+.cus-submit-btns input[type="reset"]{
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    height: 60px;
+    width: 200px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(52, 73, 94, 0.5);
+}
+.cus-submit-btns input[type="submit"]{
+    background-color: #C0392B;
+    border-radius: 5px;
+    height: 60px;
+    width: 260px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #ECF0F1;
+    margin-left: 15px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 448px){
+    .cus-heading-outer .cus-account-area{
+        margin-top: 30px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 1199px){
+    .form-group input:nth-child(2){
+        margin-left: 50px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 991px){
+    .profile-image-select{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .form-group input{
+        width: 100%;
+    }
+    .form-group input:nth-child(2){
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 600px){
+    .cus-main-margin{
+        padding: 14px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 507px){
+    .cus-submit-btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .cus-submit-btns input[type="submit"]{
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}

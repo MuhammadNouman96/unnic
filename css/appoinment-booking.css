@@ -1,0 +1,495 @@
+@font-face {
+    src: url(../fonts/Raleway-Regular.ttf);
+    font-family: raleway;
+  }
+body{
+    font-family: "raleway";
+    background-color: #34495E;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* DROP DOWN*/
+.navbar-owner{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10px;
+}
+.navbar-owner .dropdown span{
+    padding: 0px;
+    margin: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.navbar-owner .dropdown p:hover{
+    text-decoration: none;
+    opacity: 1;
+}
+.navbar-line{
+    background-color: rgba(236, 240, 241, 0.6);
+    width: 2px;
+    height: 50px;
+    position: absolute;
+    right: 115px;
+    top: 0;
+    margin: auto 5px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: auto;
+}
+
+.dropdown-menu {
+    margin-top:20px;
+    display: none;
+    position: absolute;
+    background-color: #ECF0F1;
+    border-radius: 5px;
+    width:170px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: #223140;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* NAVBAR AREA START */
+.right-nav{
+    width: 60%;
+    background-image: linear-gradient(rgba(52, 73, 94, 0.45), rgba(52, 73, 94, 0.45)), url("../imgs/nav-bg-img.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: auto;
+    padding: 0px 120px;
+}
+.cus-head-pad{
+    padding: 8px 0px;
+}
+.cus-nav-pad{
+    padding: 0px;
+}
+.navbar{
+    width: 100%;
+    padding: 8px 0px;
+}
+.menu-img{
+    width: 35px;
+}
+.navbar-collapse{
+    justify-content: flex-end;
+}
+.navbar-collapse .navbar-nav .nav-item{
+    font-size: 14px;
+    font-weight: 500;
+    color: #F8F9FA;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+.navbar-collapse .navbar-nav .nav-link:hover{
+    transition: .5s;
+    opacity: 0.7;
+}
+.cus-btn{
+    background: transparent;
+    color: #ffffff;
+    text-transform: capitalize;
+    border:  2px solid #C0392B;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+.cus-btn:hover{
+    transition: 0.5s;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid blue;
+}
+/* NAVBAR END */
+
+/* APPOINMENT HEADING AREA */
+.appoin-heading{
+    width: 100%;
+    text-align: center;
+    margin: 100px auto;
+}
+.appoin-heading h1{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    color: #ECF0F1;
+    text-transform: capitalize;
+}
+
+/* BOOKING FORM AREA START*/
+.cus-bg{
+    position: relative;
+    width: 100%;
+}
+.cus-bg .cus-appoin-bg::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background-image: url("../imgs/Bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 807px;
+    width: 970px;
+    z-index: -1;
+}
+.cus-bg .cus-appoin-bg::before{
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 0px;
+    background-image: url("../imgs/Standing.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 410px;
+    width: 304px;
+}
+.cus-form{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+.cus-form form{
+    width: 100%;
+}
+
+.cus-input{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.cus-input input{
+    width:49%;
+    height: 60px;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.cus-input input[type="text"]{
+    color: #ECF0F1;
+    font-family: Raleway;
+}
+.cus-input input[type="tel"]{
+    color: #ECF0F1;
+    font-family: Raleway;
+}
+.cus-input input[type="email"]{
+    color: #ECF0F1;
+    font-family: Raleway;
+}
+.address-input input[type="text"]{
+    color: #ECF0F1;
+    font-family: Raleway;
+}
+.cus-input input::placeholder{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.date-input input{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.date-input input[type="date"]{
+    color: #ECF0F1;
+    font-family: Raleway;
+}
+.cus-input select{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+    width:49%;
+    height: 60px;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+}
+select option[value=""]{
+    display: none;
+}
+.address-input input{
+    width: 100%;
+    height: 60px;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: transparent;
+    margin-bottom: 40px;
+}
+.address-input input::placeholder{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.text-area textarea{
+    color: #ECF0F1;
+    width: 100%;
+    background-color: transparent;
+    border: 0.5px solid #ECF0F1;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.text-area textarea[name="message"]{
+    color: #ECF0F1;
+    font-family: Raleway;
+}
+.text-area textarea::placeholder{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #ECF0F1;
+}
+.cus-input input:focus{
+    background-color: transparent;
+}
+.address-input input:focus{
+    background-color: transparent;
+}
+.text-area textarea:focus{
+    background-color: transparent;
+}
+.cus-input select:focus{
+    background-color: transparent;
+    color: #ECF0F1;
+}
+.cus-input select option{
+    color: #fff;
+    background-color: #34495E;
+}
+.submit-btn{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.submit-btn input{
+    background-color:#C0392B;
+    border-radius: 5px;
+    padding: 13px 85px;
+    font-family: Raleway;
+    font-style: n   ormal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #ECF0F1;
+}
+.submit-btn input:hover{
+    text-decoration: none;
+    color: #ECF0F1;
+}
+/* BOOKING FORM AREA END*/
+
+/*FOOTER AREA STARTS*/
+.footer-bg{
+    background-color: #C4C4C4;
+    position: absolute;
+}
+.footer-inner{
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+
+.footer-section1 .footer-logo{
+    margin-bottom: 20px;
+    width: 100px;
+    height: 35px;
+}
+.footer-section1 .footer-logo-text{
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(52, 73, 94, 0.5);
+    margin-top: 10px;
+}
+.footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+.footer-section2 .foot-heading, .footer-section3 .foot-heading, .footer-section4 .foot-heading, .footer-section5 .foot-heading{
+    color: #223140;
+    font-weight: 800;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}  
+.foot-link{
+    color: rgba(52, 73, 94, 0.5);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3px;
+    margin-top: 10px;
+}
+.foot-link:hover{
+    text-decoration: none;
+    color:rgba(52, 73, 94, 0.5);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.foot-input{
+margin-top:10px;
+}
+.foot-input .input-group-text{
+    background-color: #FFFFFF;
+    border: 0px;
+}
+.foot-input .input-txt{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 0px;
+}
+.copyright-text{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.copyright-text .copyright{
+    font-size: 14px;
+    color: rgba(52, 73, 94, 0.5);
+    text-transform: capitalize;
+}
+@media only screen and (min-width: 200px) and (max-width: 1100px){
+    .cus-bg .cus-appoin-bg::after{
+        display: none;
+    }
+    .cus-bg .cus-appoin-bg::before{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 990px){
+    .navbar-line{
+        display: none;
+    }
+    .navbar-owner{
+        display: block;
+        margin-left: 0px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 580px){
+    .cus-input{
+        display: block;
+        margin-bottom: 0px;
+    }
+    .cus-input input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .cus-input select{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 483px) and (max-width: 529px){
+    .appoin-heading h1{
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 435px) and (max-width: 482px){
+    .appoin-heading h1{
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 434px){
+    .appoin-heading h1{
+        font-size: 38px;
+    }
+    .cus-form{
+        width: 100%;
+    }
+}
+@media only screen and (min-width: 389px) and (max-width: 418px){
+    .appoin-heading h1{
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 388px){
+    .appoin-heading h1{
+        font-size: 32px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 355px){
+    .appoin-heading h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 330px){
+    .appoin-heading h1{
+        font-size: 27px;
+    }
+}
+/* FOOTER QUERRY */
+@media only screen and (min-width: 767px) and (max-width: 1157px){
+    .footer-section2{
+        margin-left: 30px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 19%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px){
+    .footer-inner{
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    .footer-section1, .footer-section2, .footer-section3, .footer-section4, .footer-section5{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .foot-input{
+        width: 50%;
+    }
+}
+@media only screen and (min-width: 200px) and (max-width: 500px){
+    .foot-input{
+        width: 80%;
+    }
+}
